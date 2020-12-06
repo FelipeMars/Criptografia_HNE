@@ -33,15 +33,10 @@ input {
 	width: 70em;
 }
 
-#msg {
+#msg, #msgcript {
 	position: initial;;
 	float: left;
-	padding-right: 5em;
-}
-	
-#msgcript {
-	position: initial;
-	float: left;
+	padding-right: 2.5em;
 }
 
 textarea {
@@ -63,23 +58,25 @@ textarea {
 }
 
 button {
-	margin-top: 15px;
-	background-color: #90008C;
 	width: 225px;
-	height: 47px;
+	height: 50px;
+
+	margin-top: 15px;
+	text-align: center;
+
+	background-color: #90008C;
 	border-radius: 30px;
 	border: none;
 	color: #fff;
 	font-size: 25px;
-	text-align: center;
 	outline: none;
 	box-shadow: 0px 1px 10px black;
 	cursor: pointer;
-	transition:0.1s;
+
+	transition:0.3s;
 }
 
 button:hover {
-	transition-duration: 0.3s;
 	background-color: #5A0057;
 	padding-bottom: 5px;
 	text-shadow: 0 0 5px #fff;
