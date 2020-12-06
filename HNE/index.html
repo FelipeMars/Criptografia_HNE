@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia HNE-20</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/hneIcon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="imagens/hne.png" alt="Logo HNE20" id="logo">
+    </header>
+    <div id="chave">
+        <p>Chave: <input type="text" id="key" maxlength="64" placeholder="Digite a chave aqui"></p>
+    </div>
+    <div id="app">  
+        <div id="msg">
+            <p>Mensagem original:</p>
+            <textarea id="txtMsg" maxlength="128" placeholder="Digite sua mensagem aqui"></textarea>
+            <div id="msgbutton">
+                <button id="btnMsg">Criptografar</button>
+            </div>
+        </div>
+        <div id="msgcript">
+            <p>Mensagem criptografada:</p>
+            <textarea id="txtMsgCripto" maxlength="128" placeholder="Digite a mensagem criptografada aqui"></textarea>
+            <div id="msgbutton">
+                <button id="btnDesc">Descriptografar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
