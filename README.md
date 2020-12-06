@@ -1,4 +1,4 @@
-<h1 align="center">CRIPTOGRAFIA HNE-20</h1>
+<p align="center"><img src="https://github.com/FelipeMars/Criptografia_HNE/blob/master/HNE/imagens/hne.png?raw=true" width="350px" height="120px"></p>
 <h3 align="center">Heimdall Nuntius Encryption 2020</h3>
 <hr>
 <p align="justify">A criptografia HNE-20 foi desenvolvida originalmente em Python pelo grupo de estudantes da Universidade Paulista (UNIP) do Campus Marquês: Alex, Felipe, Saymon e Victor.</p>
