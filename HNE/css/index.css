@@ -89,7 +89,6 @@ button:hover {
 /*Celular*/
 @media (max-width: 1145px){
     #chave {
-		margin-left: 2.5em;
 		width: 25em;
 	}
 
@@ -98,7 +97,6 @@ button:hover {
 	}
 
 	#app {
-		margin-left: 2.5em;
 		margin-top: 2em;
 		width: 28em;
 	}
