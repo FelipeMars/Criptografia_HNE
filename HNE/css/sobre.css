@@ -38,3 +38,9 @@ footer p {
     margin-top: 9px;
     font-size: 18px;
 }
+
+@media (max-width: 1145px){
+    footer {
+        height: 65px;
+    }
+}
