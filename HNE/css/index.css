@@ -5,7 +5,7 @@
 	margin-right: auto;
 	margin-bottom: 1em;
 	
-	display: block;	
+	display: block;
 	width: 35em;
 }
 
@@ -89,16 +89,14 @@ button:hover {
 /*Celular*/
 @media (max-width: 1145px){
     #chave {
-		margin-left: 2.5em;
-		width: 25em;
+		width: 28em;
 	}
 
 	input {
-		width: 14em;
+		width: 17em;
 	}
 
 	#app {
-		margin-left: 2.5em;
 		margin-top: 2em;
 		width: 28em;
 	}
