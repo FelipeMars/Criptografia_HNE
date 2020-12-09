@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia HNE-20</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="shortcut icon" href="../imagens/hneIcon.png" type="image/png">
+    <meta name="theme-color" content="#151515">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"><img id="menuicon" src="../imagens/menuIcon.png" alt="menu"></label>
+        <img src="../imagens/hne.png" alt="Logo HNE20" id="logo">
+        <div class="barra">
+            <nav>
+                <a href="../index.html"><div class="link">Criptografar e Descriptografar</div></a>
+                <a href="chat.html"><div class="link">Chat Privado (Em breve)</div></a>
+                <a href="historico.html"><div class="link">Histórico</div></a>
+                <a href="sobre.html"><div class="link">Sobre</div></a>
+                <a href="contato.html"><div class="link">Contato (Em breve)</div></a>
+                <p id="creditos">Todos os direitos reservados. Desenvolvido por Felipe Martins.</p>
+            </nav>
+        </div>
+    </header>
+
+    <form id="chat">
+        <input type="text" name="username" placeholder="Digite seu usuário">
+        <div class="messages"></div>
+        <input type="text" name="message" placeholder="Digite sua mensagem">
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+
+    <script type="text/javascript">
+        var socket = io('http://localhost:3000');
+
+        function renderMessage(message){
+            $('.messages').append('<div class="message"><strong>' + message.author + '</strong>: ' + message.message + '</div>')
+        }
+
+        socket.on('previousMessages', function(messages){
+            for (message of messages) {
+                renderMessage(message);
+            }
+        })
+
+        socket.on('receivedMessage', function(message){
+            renderMessage(message);
+        });
+
+        $('#chat').submit(function(event){
+            event.preventDefault();
+
+            var author = $('input[name="username"]').val();
+            var message = $('input[name="message"]').val();
+
+            if (author.length && message.length){
+                var messageObject = {
+                    author: author,
+                    message: message,
+                };
+
+                renderMessage(messageObject);
+
+                socket.emit('sendMessage', messageObject);
+            };
+        });
+    </script>
+</body>
+</html>
