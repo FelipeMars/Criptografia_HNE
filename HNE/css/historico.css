@@ -36,7 +36,10 @@
 }
 
 #tabela tr td {
+    padding-left: 5px;
     text-align: center;
+    font-size: 16px;
+    word-break: break-all;
 }
 
 #tabela tr td img {
@@ -91,6 +94,20 @@ button:hover {
 }
 
 @media (max-width: 768px){
+    body {
+        transform: scale(0.9);
+        transform-origin: 0 0;
+    }
+
+    header {
+		position: absolute;
+		width: 111%;
+    }
+
+    h1 {
+        padding-left: 2em;
+    }
+
     #limpar, #descricao, #historico {
         width: 111%;
     }
