@@ -8,8 +8,4 @@
 <p align="justify">Atualmente (6 de dezembro de 2020, às 20:32) o site está disponível clicando <a href="https://hne2020.000webhostapp.com/">aqui</a>. Ou através do link: https://hne2020.000webhostapp.com/</p><br>
 <p align="center"><img src="https://github.com/FelipeMars/Criptografia_HNE/blob/master/assets/hne.png?raw=true" width="600px" heigth="300px"></p><br>
 <hr>
-<h3>Atualizações:</h3><br>
-<p align="justify">O site conta com duas páginas: Criptografar e Descriptografar, e Sobre.</p>
-<p align="justify">Porém 2 novas páginas serão desenvolvidas: Chat onde poderá comunicar-se utilizando uma chave para criptografar as mensagens e uma página de contato caso haja alguma ideia ou crítica.</p>
-<hr>
 <p align="center"><a href="https://github.com/FelipeMars/Criptografia_HNE/blob/master/LICENSE">MIT LICENSE</a></p>
